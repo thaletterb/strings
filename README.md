@@ -1,4 +1,4 @@
-# STRINGS!!!
+# STRINGS
 
 Some simple code to explore the various implementations of strings in C. 
 
@@ -7,7 +7,8 @@ Some simple code to explore the various implementations of strings in C.
 
 ## To Do:
 12/10/15:
-
+Reverse string function in string_as_pointers directory does not work
 
 ## Rev. History
-12/10/15: First commit
+12/10/15: 
+First commit. Only strings as pointers code so far
