@@ -7,7 +7,8 @@ Some simple code to explore the various implementations of strings in C.
 
 ## To Do:
 12/10/15:
-Reverse string function in string_as_pointers directory does not work
+- Reverse string function in string_as_pointers directory does not work
+- Implement same functions from string_as_pointers as string_as_arrays
 
 ## Rev. History
 12/10/15: 
