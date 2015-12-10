@@ -13,3 +13,7 @@ Some simple code to explore the various implementations of strings in C.
 ## Rev. History
 12/10/15: 
 First commit. Only strings as pointers code so far
+
+## References
+12/10/2015:
+https://www.cs.bu.edu/teaching/c/string/intro/
