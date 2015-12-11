@@ -11,7 +11,7 @@ author: github.com/thaletterb
 #include <strings_as_pointers.h>
 
 int main(){
-	char *my_string, *my_copied_string;
+	char *my_string, *my_copied_string, *my_reversed_string;
 	int len_of_my_string;
 
 	// Basic string printing
@@ -65,17 +65,15 @@ char* my_strcpy(char *my_string){
 
 char* my_reverse_string(char *my_string){
 // Returns a reversed version of my_string
-	char* reversed_string;
-	reversed_string = (char *)malloc(sizeof(my_string));
-	int str_len = 0;
-	
-	str_len = my_strlen(my_string);
-	printf("%c", *(my_string));
-	while(str_len > 0){
-		*(reversed_string+str_len) = *(my_string);
-		my_string++;
-		str_len--;
+	int str_len = my_strlen(my_string);
+	int i = 0;
+
+	//char* reversed_string;						// Does not work!! Does not know how big reversed string is
+	char* reversed_string = malloc((str_len+1));	// Need to allocate enough memory to hold the string
+
+	for(i=0; i<str_len; i++){
+		*(reversed_string+i) = *(my_string+((str_len-1)-i));
 	}
-	printf("%s", reversed_string);
+	printf("%s\n", reversed_string);
 	return reversed_string;
 }
