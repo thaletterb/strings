@@ -7,18 +7,11 @@ Some simple code to explore the various implementations of strings in C.
 2. String as pointers
 	- IN PROGRESS
 
-## Tree
+## How to compile & run examples:
+- Within each directory, are include and src directories where headers and source files are stored (respectively)
+- In each src directory, there exists a makefile with rules for compiling executeable binaries. 
+- To recompile changes, run $make from the src directory
 
-├── README.md
-└── strings_as_pointers
-    ├── include
-	    │   └── strings_as_pointers.h
-		    └── src
-			        ├── Makefile
-					        ├── obj
-							        │   └── strings_as_pointers.o
-									        ├── strings_as_pointers
-											        └── strings_as_pointers.c
 
 
 ## Rev. History
