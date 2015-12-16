@@ -7,6 +7,20 @@ Some simple code to explore the various implementations of strings in C.
 2. String as pointers
 	- IN PROGRESS
 
+## Tree
+
+├── README.md
+└── strings_as_pointers
+    ├── include
+	    │   └── strings_as_pointers.h
+		    └── src
+			        ├── Makefile
+					        ├── obj
+							        │   └── strings_as_pointers.o
+									        ├── strings_as_pointers
+											        └── strings_as_pointers.c
+
+
 ## Rev. History
 12/11/15:
 Working my_reverse_string() function in string_as_pointers directory. 
