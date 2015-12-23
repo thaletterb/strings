@@ -1,22 +1,24 @@
 /*
 strings_as_pointers.c
 
-Basic example of storing, and manipulating strings in C using char pointers (char *my_pointer)
+Basic example of storing, and manipulating strings in C using char arrays (char my_string[])
 
 author: github.com/thaletterb
 */
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <strings_as_pointers.h>
+#include <strings_as_arrays.h>
 
 int main(){
-	char *my_string, *my_copied_string, *my_reversed_string;
+	char my_string[] = "Hello World!";
+	char *my_copied_string, *my_reversed_string;
+	//char *my_string, *my_copied_string, *my_reversed_string;
 	int len_of_my_string;
 
 	// Basic string printing
 	printf("BASIC STRING PRINTING: \n");
-	my_string = "Hello World!";
+	//my_string = "Hello World!";
 	printf("%s\n", my_string);
 	print_my_string(my_string);
 	printf("\n");
@@ -32,7 +34,7 @@ int main(){
 	my_copied_string = my_strcpy(my_string);
 	printf("%s", my_copied_string);
 	printf("\n");
-	my_string = "Goodbye World!";
+	//my_string = "Goodbye World!";
 	printf("%s", my_string);
 	printf("\n");
 	printf("%s", my_copied_string);	// Points to original location in memory of "my_copied_string"
@@ -44,7 +46,7 @@ int main(){
 	return 0;
 }
 
-int my_strlen(char *my_string){
+int my_strlen(char my_string[]){
 // Returns length of my_string
 	int i=0;
 	for(i=0; *(my_string++) != '\0'; i++){
